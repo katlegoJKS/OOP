@@ -8,9 +8,9 @@ class Person:
         self.interests = interests
 
     def hello(self):
-        interests = ",".join(self.interests)
-        return "Hello, my name is {} and I am {} years old. My interests are {} ".format(self.name,self.age,interests)
+        # interests = ",".join(self.interests)
+        return (f"Hello, my name is {self.name} and I am {self.age} years old. My interests are {self.interests}")
 
 
-person = Person("Ryan",30,"male",["being a hardarse,agile and ssd hard drives"])
+person = Person("Ryan",30,"male","being a hardarse,agile and ssd hard drives")
 print(person.hello())
